@@ -12,6 +12,10 @@ const Loader = () => {
   const handlePause = () => {
     setIsLoading(false);
   };
+  const handleReset = () => {
+    setIsLoading(false);
+    setProgress(0);
+  };
   useEffect(() => {
     let chunks;
 
@@ -51,6 +55,12 @@ const Loader = () => {
           onClick={handlePause}
         >
           Pause
+        </button>
+        <button
+          className="border-2 rounded-md border-gray-700 mx-2 p-1"
+          onClick={handleReset}
+        >
+          Reset Progress
         </button>
       </div>
     </div>
