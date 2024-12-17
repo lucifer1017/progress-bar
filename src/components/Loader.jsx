@@ -30,7 +30,7 @@ const Loader = () => {
   }, [isLoading, progress]);
 
   return (
-    <div className="flex justify-center ">
+    <div className="flex justify-center items-center">
       <div className="border-2 border-gray-600 my-20 h-4 w-3/12 mx-16">
         <div
           className={`bg-red-500 
